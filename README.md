@@ -23,3 +23,9 @@ Mo `index.html` bang trinh duyet.
 6. Sua phan mo ta nay, tao commit moi va push.
 
 Khong commit khoa API, mat khau hoac thong tin rieng tu.
+
+
+// tiếp theo
+## Ghi chú luyện tập
+
+Đã thực hành tạo branch và Pull Request.
