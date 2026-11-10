@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ung dung danh sach viec can lam don gian de luyen Git va GitHub.">
+  <title>Danh sách việc cần làm</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="app" aria-labelledby="page-title">
+    <header class="header">
+      <p class="eyebrow">DỰ ÁN LUYỆN GIT VÀ GITHUB</p>
+      <h1 id="page-title">Danh sách việc cần làm</h1>
+      <p class="intro">Ghi lại một việc nhỏ, hoàn thành từng bước.</p>
+    </header>
+
+    <form id="task-form" class="task-form">
+      <label class="visually-hidden" for="task-input">Công việc mới</label>
+      <input id="task-input" name="task" type="text" maxlength="120" placeholder="Ví dụ: Đọc hướng dẫn Git" autocomplete="off" required>
+      <button type="submit">Thêm việc</button>
+    </form>
+
+    <section class="list-section" aria-labelledby="list-title">
+      <div class="list-heading">
+        <h2 id="list-title">Việc của tôi</h2>
+        <p id="task-count" class="task-count">0 việc</p>
+      </div>
+      <p id="empty-state" class="empty-state">Chưa có việc nào. Hãy thêm việc đầu tiên.</p>
+      <ul id="task-list" class="task-list" aria-live="polite"></ul>
+    </section>
+
+    <footer class="footer">
+      <span id="progress">Hoàn thành 0 / 0</span>
+      <button id="clear-completed" class="text-button" type="button">Xóa việc đã xong</button>
+    </footer>
+  </main>
+</body>
+</html>
